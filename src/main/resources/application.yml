@@ -1,0 +1,20 @@
+spring:
+  security:
+    user:
+      name: mobile
+      password: rahul123
+  datasource:
+      name: mobile_app
+      url: jdbc:mysql://localhost:3306/mobile_app
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        .dialect: org.hibernate.dialect.MySQL8Dialect
+        
+server:
+  port: 4774
